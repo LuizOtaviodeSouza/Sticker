@@ -1,0 +1,9 @@
+Configurar o GIT Local
+git config --global user.name Luiz O.
+git config --global user.email lui-otavio@hotmail.com
+
+npx create-expo-app@latest Sticker
+
+npm run reset-project
+
+npx expo start
