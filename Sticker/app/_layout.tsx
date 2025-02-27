@@ -1,4 +1,5 @@
 import { Stack } from "expo-router";
+import Ionincons from "@/vector-icons/"
 
 export default function RootLayout() {
   return(
