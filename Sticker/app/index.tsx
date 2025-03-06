@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
-import { image } from 'empo-image'
+import ImageView, { image } from '@/components/ImageView'
+import Button from "@/components/Button";
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
@@ -7,7 +8,12 @@ export default function Index() {
   return (
     <View style = {styles.container}>
       <View styles={styles.imageContainer}>
-        <Image sourcce={PlaceholderImage} style={StyleSheet.image} />
+        <ImageView imgSource={PlaceholderImage} />
+        </View>
+        <View style={styles.footerContainer}>
+          <Button label="Escolher foto" />
+          
+          <Button label="Usar foto" />
         </View>
     </View>
   );
@@ -21,10 +27,5 @@ const styles = StylesSheet.create({
   },
   imageContainer: {
     flex: 1,
-  },
-  image: {
-    width: 320,
-    height: 400,
-    borderRadius: 18
   },
 });
