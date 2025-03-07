@@ -6,4 +6,4 @@ npx create-expo-app@latest Sticker
 
 npm run reset-project
 
-npx expo start
+npx expo start 
