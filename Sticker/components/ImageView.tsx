@@ -16,3 +16,8 @@ image: {
   borderRadius: 10,
 },
 });
+
+export default function ImageViewer({ imgSource, selectedImage }: )
+const imageSource = selectedImage ? { uri: selectedImage } 
+: imgSource
+return <image source={imageSource} style={styles.image} />;
