@@ -1,12 +1,11 @@
-import { Text, View } from "react-native";
-import ImageView, { image } from '@/components/ImageView'
 import Button from "@/components/Button";
+import * as ImagePicker from "expo-image-picker";
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
 export default function Index() {
 
-  const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined); 
+  const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
   return (
     <View style = {styles.container}>
       <View styles={styles.imageContainer}>
