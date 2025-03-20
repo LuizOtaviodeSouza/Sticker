@@ -1,5 +1,8 @@
 import Button from "@/components/Button";
 import * as ImagePicker from "expo-image-picker";
+import ImageView from "@/components/ImageView";
+import { useState } from "react";
+import IconButton from "@/components/iconButton";
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
@@ -22,6 +25,18 @@ export default function Index() {
         </View>
     </View>
   );
+}
+
+const onReset = () => {
+  setShowAppOptions(false);
+}
+
+const onAddStricker = () => {
+
+}
+
+const onSaveImageAsnc = () => {
+
 }
 
 const styles = StylesSheet.create({
