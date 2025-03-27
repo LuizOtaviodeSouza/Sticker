@@ -32,7 +32,11 @@ const onReset = () => {
 }
 
 const onAddStricker = () => {
+  setIsModalVisible(true);
+}
 
+const onModalClose = () => {
+  setModalVisible(false);
 }
 
 const onSaveImageAsnc = () => {
