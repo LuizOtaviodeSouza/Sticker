@@ -1,4 +1,4 @@
-import { StyleSheet, TExt, Pressable } from 'react-native'
+import { StyleSheet, Text, Pressable } from 'react-native'
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 type Props = {
@@ -9,20 +9,20 @@ type Props = {
 
 export default function IconButton({icon, label, onPress}: Props) {
     return (
-        <Pressable style={StyleSheet.iconButton} onPress={onPress}>
+        <Pressable style={styles.iconButton} onPress={onPress}>
             <MaterialIcons name={icon} size={24} color="#fff" />
-            <Text style={StyleSheet.iconButtonLabel}>{label}</Text>
+            <Text style={styles.iconButtonLabel}>{label}</Text>
         </Pressable>
     )
 }
 
 const styles = StyleSheet.create({
     iconButton: {
-        justifyContent: 'cewnter',
-        alingItems: 'center'
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     iconButtonLabel: {
-        color: "#fff",
+        color: '#fff',
         marginTop: 12,
     }
 })
