@@ -13,20 +13,20 @@ export default function Button({ label, theme, onPress }: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 },
+          { borderWidth: 4, borderColor: "#A95C68", borderRadius: 18 },
         ]}
       >
         <Pressable
-          style={[styles.button, { backgroundColor: "#fff" }]}
+          style={[styles.button, { backgroundColor: "#F2D2BD" }]}
           onPress={onPress}
         >
           <FontAwesome
             name="picture-o"
             size={18}
-            color="#25292e"
+            color="#301934"
             style={styles.buttonIcon}
           />
-          <Text style={[styles.buttonLabel, { color: "#25292e" }]}>
+          <Text style={[styles.buttonLabel, { color: "#301934" }]}>
             {label}
           </Text>
         </Pressable>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   buttonLabel: {
-    color: "#fff",
+    color: "#F2D2BD",
     fontSize: 16,
   },
   buttonIcon: {

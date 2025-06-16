@@ -8,4 +8,7 @@ npm run reset-project
 
 npx expo start 
 
-npx expo start --localhost --android
+npx expo start --localhost --android 
+
+Cor index = 5A3E2B
+Cor borda = 422C1F
